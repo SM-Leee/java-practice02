@@ -11,7 +11,7 @@ public class Prob01 {
 		Scanner scanner = new Scanner(System.in);
 		int money = scanner.nextInt();
 		
-		for(int i=0;i<10;i++) {
+		for(int i=0;i<MONEYS.length;i++) {
 			int num =0;
 			num = money/MONEYS[i];
 			if(money/MONEYS[i]!=0) {
