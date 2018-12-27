@@ -15,4 +15,17 @@ public class Prob03 {
 		printCharArray(c);
 	}
 	
+	public static void replaceSpace(char a[]) {
+		for(int i=0;i<a.length;i++) {
+			if(a[i]==' ') {//spacebar ASCII CODE :32
+				a[i]=',';//, ASCII CODE :44
+			}
+		}
+	}
+	
+	public static void printCharArray(char[] a) {
+		System.out.println(a);
+		
+	}
+	
 }
