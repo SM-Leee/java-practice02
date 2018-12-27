@@ -10,9 +10,17 @@ public class Prob01 {
 		System.out.print("금액 : ");
 		Scanner scanner = new Scanner(System.in);
 		int money = scanner.nextInt();
-
+		
 		for(int i=0;i<10;i++) {
-			
+			int num =0;
+			num = money/MONEYS[i];
+			if(money/MONEYS[i]!=0) {
+				money -= MONEYS[i]*num;
+				System.out.println(MONEYS[i]+"원 : "+num+"개");
+			}
+			else {
+				System.out.println(MONEYS[i]+"원 : "+num+"개");
+			}
 		}
 	}
 
